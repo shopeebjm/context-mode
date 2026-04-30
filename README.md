@@ -31,7 +31,7 @@
 
 ## The Problem
 
-Every MCP tool call dumps raw data into your context window. A Playwright snapshot costs 56 KB. Twenty GitHub issues cost 59 KB. One access log — 45 KB. After 30 minutes, 40% of your context is gone. And when the agent compacts the conversation to free space, it forgets which files it was editing, what tasks are in progress, and what you last asked for. On top of that, the agent wastes output tokens on filler, pleasantries, and verbose explanations — burning context from both sides.
+Setiap panggilan alat MCP akan memasukkan data mentah ke jendela konteks Anda. Sebuah snapshot Playwright membutuhkan 56 KB. Dua puluh masalah GitHub membutuhkan 59 KB. Satu log akses — 45 KB. Setelah 30 menit, 40% konteks Anda hilang. Dan ketika agen memadatkan percakapan untuk membebaskan ruang, ia lupa file mana yang sedang diedit, tugas apa yang sedang berlangsung, dan apa yang terakhir Anda minta. Selain itu, agen membuang token output untuk pengisi, basa-basi, dan penjelasan yang bertele-tele — menghabiskan konteks dari kedua belah pihak.
 
 ### How Context Mode Solves It
 
